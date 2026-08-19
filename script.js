@@ -51,18 +51,33 @@
   const navLinks = document.querySelectorAll('.sidenav a');
   const sections = document.querySelectorAll('.section');
 
-  const spy = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        navLinks.forEach((link) => {
-          link.classList.toggle('active', link.dataset.section === id);
-        });
+  // Picks the last section whose top has crossed the trigger line, instead of
+  // watching a thin intersection band — short sections (Education, About)
+  // can't get skipped over between scroll frames this way.
+  let spyTicking = false;
+  const updateActiveSection = () => {
+    spyTicking = false;
+    const triggerLine = window.innerHeight * 0.4;
+    let currentId = sections[0].id;
+    sections.forEach((section) => {
+      if (section.getBoundingClientRect().top - triggerLine <= 0) {
+        currentId = section.id;
       }
     });
-  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+    navLinks.forEach((link) => {
+      link.classList.toggle('active', link.dataset.section === currentId);
+    });
+  };
+  const requestSpyUpdate = () => {
+    if (spyTicking) return;
+    spyTicking = true;
+    requestAnimationFrame(updateActiveSection);
+  };
 
-  sections.forEach((section) => spy.observe(section));
+  window.addEventListener('scroll', requestSpyUpdate, { passive: true });
+  window.addEventListener('resize', requestSpyUpdate);
+  if (lenis) lenis.on('scroll', requestSpyUpdate);
+  updateActiveSection();
 
   if (lenis) {
     navLinks.forEach((link) => {

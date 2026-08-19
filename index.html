@@ -123,6 +123,46 @@
       <h2 class="section-title"><span class="num">04</span>Projects</h2>
 
       <article class="project reveal">
+        <div class="project-shot project-shot--phone">
+          <span class="platform-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm-5 19a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM17 17H7V5h10Z"/></svg>
+            iOS &amp; Android
+          </span>
+          <div class="phone-duo">
+            <div class="phone phone--left">
+              <div class="phone-notch"></div>
+              <a class="phone-screen" href="#" target="_blank" rel="noopener" aria-label="Astro OS landing screen">
+                <img src="img/astroos-landing.jpg" alt="Astro OS landing screen" loading="lazy">
+              </a>
+            </div>
+            <div class="phone phone--right">
+              <div class="phone-notch"></div>
+              <a class="phone-screen" href="#" target="_blank" rel="noopener" aria-label="Astro OS Oracle screen">
+                <img src="img/astroos-oracle.jpg" alt="Astro OS Ask the Oracle screen" loading="lazy">
+              </a>
+            </div>
+          </div>
+          <span class="shot-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.2 1.9"/></svg>
+            App Yet to Go Live
+          </span>
+        </div>
+        <div class="project-body">
+          <span class="project-index">01</span>
+          <div class="project-head">
+            <h3>Astro OS</h3>
+            <div class="project-links">
+              <a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Store
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">Most astrology apps give you one interpretation. Astro OS runs your birth data through nine systems at once, from Vedic to BaZi to Numerology, and has an AI layer merge them into a single answer. Comes with a daily Clarity Score, an Oracle for plain-English questions, and a Pro tier for the full reading archive. Built solo, end to end, in React Native.</p>
+          <div class="tags"><span>React Native</span><span>Expo</span><span>JavaScript</span><span>RevenueCat</span></div>
+        </div>
+      </article>
+
+      <article class="project reveal">
         <div class="project-shot">
           <div class="shot-chrome">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -137,7 +177,7 @@
           </span>
         </div>
         <div class="project-body">
-          <span class="project-index">01</span>
+          <span class="project-index">02</span>
           <div class="project-head">
             <h3>ResumeAI</h3>
             <div class="project-links">
@@ -149,7 +189,7 @@
               </a>
             </div>
           </div>
-          <p class="project-desc">AI-powered resume analyzer, built end to end with React, Python, and FastAPI. Upload a resume and a job description and it runs a 3-stage LLM pipeline via DeepSeek/OpenRouter to score the match, flag missing requirements, and suggest fixes — with strict JSON schema enforcement so the output is always structured and reliable.</p>
+          <p class="project-desc">Upload a resume and the job description you're chasing, and ResumeAI shows you exactly where they don't line up. It runs both through a three-stage DeepSeek pipeline: one pass scores the match, one flags what's missing, one rewrites the weak spots. Every response is forced through a strict JSON schema, so it never comes back malformed. Built solo: React up front, FastAPI behind it.</p>
           <div class="tags"><span>React</span><span>Python</span><span>FastAPI</span><span>OpenRouter</span></div>
         </div>
       </article>
@@ -169,7 +209,7 @@
           </span>
         </div>
         <div class="project-body">
-          <span class="project-index">02</span>
+          <span class="project-index">03</span>
           <div class="project-head">
             <h3>SpotiCLI</h3>
             <div class="project-links">
@@ -178,7 +218,7 @@
               </a>
             </div>
           </div>
-          <p class="project-desc">Cross-platform CLI music player integrating Spotify and YouTube — search a song, pick the right result, and it streams instantly through mpv with real-time keyboard playback controls. Built with Node.js, OAuth 2.0 token handling, and an interactive Inquirer/Chalk interface, no browser tab required.</p>
+          <p class="project-desc">A terminal music player for people who don't want a browser tab open just to hit play. Search a track, pick the right result off Spotify or YouTube, and it streams through mpv with keyboard controls for play, pause, skip, and volume. Handles the Spotify OAuth handshake itself, so you log in once and it stays out of your way.</p>
           <div class="tags"><span>Node.js</span><span>mpv</span><span>Spotify API</span><span>OAuth 2.0</span></div>
         </div>
       </article>
