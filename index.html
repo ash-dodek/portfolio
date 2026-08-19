@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harsh Kumar — Backend Developer</title>
+<title>Harsh Tripathi, Backend Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 </head>
 <body>
 
@@ -31,9 +32,9 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="id-row">
-        <div class="avatar">HK</div>
+        <div class="avatar"><img src="img/avatar.jpg" alt="Harsh"></div>
         <div>
-          <h1>Harsh Kumar</h1>
+          <h1>Harsh</h1>
           <p class="uni-line">Delhi Technological University · IT</p>
         </div>
       </div>
@@ -41,7 +42,6 @@
       <div class="meta-row">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>B.Tech IT, 2024–2028</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-11.5a7 7 0 1 0-14 0C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>New Delhi, India</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Aug 2024 – May 2028</span>
       </div>
 
       <nav class="sidenav">
@@ -56,14 +56,11 @@
 
     <div class="sidebar-bottom">
       <ul class="socials">
-        <li><a href="mailto:harsh.dev.mail@gmail.com" aria-label="Email">
+        <li><a href="mailto:harsh.devistrue@gmail.com" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
         </a></li>
-        <li><a href="https://github.com/harsh" target="_blank" rel="noopener" aria-label="GitHub">
+        <li><a href="https://github.com/ash-dodek" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>
-        </a></li>
-        <li><a href="https://linkedin.com/in/harsh" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5.5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.75h3.12V21H3.4V8.75Zm6.06 0h2.99v1.68h.04c.42-.78 1.44-1.6 2.96-1.6 3.16 0 3.75 2.02 3.75 4.66V21h-3.12v-5.85c0-1.4-.03-3.2-1.98-3.2-1.98 0-2.28 1.5-2.28 3.1V21H9.46V8.75Z"/></svg>
         </a></li>
       </ul>
     </div>
@@ -72,7 +69,7 @@
   <!-- RIGHT / SCROLLING -->
   <main class="content">
 
-    <section id="education" class="section">
+    <section id="education" class="section reveal">
       <h2 class="section-title"><span class="num">01</span>Education</h2>
 
       <div class="timeline">
@@ -82,33 +79,27 @@
             <h3>B.Tech, Information Technology <span class="tl-at">· Delhi Technological University</span></h3>
             <p class="tl-loc">New Delhi</p>
             <ul>
-              <li>CGPA: 8.06</li>
+              <li>CGPA: 8.02</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <h2 class="section-title"><span class="num">02</span>About</h2>
       <div class="prose">
         <p>
-          I'm a second-year IT student at Delhi Technological University
-          (CGPA 8.06) who spends more time in backend logs than lecture
-          halls. Most of what I know comes from shipping things that
-          had to actually work — payroll systems, OTP flows, S3 uploads
-          that can't quietly fail at 2am.
-        </p>
-        <p>
-          Outside of work, I've built an AI pipeline that reads resumes
-          for a living and a CLI that streams Spotify better than most
-          apps do. I've also solved 500+ problems on LeetCode, rated
-          1705 — top 13% globally — mostly out of stubbornness.
+          I'm a full-stack developer who moves comfortably across
+          backend systems, web apps, and mobile, wherever a product
+          needs building. I like owning things end to end: architecture,
+          APIs, interfaces, deployment. If it needs to work in
+          production, that's the part I care about most.
         </p>
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="work" class="section reveal">
       <h2 class="section-title"><span class="num">03</span>Experience</h2>
 
       <div class="timeline">
@@ -118,22 +109,20 @@
             <h3>Backend Developer Intern <span class="tl-at">· iComply LifeSciences</span></h3>
             <p class="tl-loc">Remote</p>
             <ul>
-              <li>Built and maintained backend systems across financial operations, payroll processing, and institutional management using Node.js and Express on a modular 4-layer architecture.</li>
-              <li>Led migration of a legacy PHP backend to Node.js — rewrote 20+ API endpoints, cutting average response time from 3s to under 200ms.</li>
-              <li>Optimized endpoints by eliminating unnecessary joins, redundant processing, and N+1 bottlenecks, improving response times by 30–40%.</li>
-              <li>Implemented OTP-based authentication and AWS S3 integration for secure file storage and image handling.</li>
-              <li>Designed and managed MySQL schemas with Sequelize, including associations and constraints.</li>
-              <li>Worked with services deployed on AWS (EC2 / Lambda) via automated CI/CD pipelines using GitHub Actions.</li>
+              <li>Migrated a legacy PHP backend to Node.js/Express, rewriting 20+ API endpoints and cutting average response time from 3s to under 200ms.</li>
+              <li>Killed N+1 query patterns and redundant joins across core services, delivering 30–40% faster responses under higher concurrent load.</li>
+              <li>Built OTP-based auth and AWS S3 file storage into a modular 4-layer backend spanning financial, payroll, and institutional systems.</li>
+              <li>Added rate limiting and request validation to harden endpoints against overload and abuse.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <h2 class="section-title"><span class="num">04</span>Projects</h2>
 
-      <article class="project">
+      <article class="project reveal">
         <span class="project-index">01</span>
         <div class="project-head">
           <h3>ResumeAI</h3>
@@ -149,14 +138,14 @@
         <p class="project-desc">AI-powered resume analyzer that scores a resume against a job description and returns structured, actionable feedback.</p>
         <ul>
           <li>Built with React, Python, and FastAPI end to end.</li>
-          <li>Designed a 3-stage LLM pipeline via DeepSeek / OpenRouter — extracting structured JSON from JDs, parsing resumes, and computing weighted match scores with improvement suggestions.</li>
+          <li>Designed a 3-stage LLM pipeline via DeepSeek / OpenRouter that extracts structured JSON from JDs, parses resumes, and computes weighted match scores with improvement suggestions.</li>
           <li>Engineered stage-specific prompts with strict JSON schema enforcement, eliminating unstructured LLM output.</li>
           <li>Shipped a production-ready FastAPI backend with rate limiting, CORS middleware, and regex-based JSON sanitization.</li>
         </ul>
         <div class="tags"><span>React</span><span>Python</span><span>FastAPI</span><span>OpenRouter</span></div>
       </article>
 
-      <article class="project">
+      <article class="project reveal">
         <span class="project-index">02</span>
         <div class="project-head">
           <h3>SpotiCLI</h3>
@@ -171,50 +160,62 @@
           <li>Built with Node.js and mpv for real-time, low-latency audio streaming and reliable play-dl playback.</li>
           <li>Implemented OAuth 2.0 with secure token handling for authenticated track and artist search.</li>
           <li>Wired real-time playback controls through mpv's keyboard input handling.</li>
-          <li>Designed an interactive CLI with Inquirer and Chalk — custom prompts, colorized output.</li>
+          <li>Designed an interactive CLI with Inquirer and Chalk, featuring custom prompts and colorized output.</li>
         </ul>
         <div class="tags"><span>Node.js</span><span>mpv</span><span>Spotify API</span><span>OAuth 2.0</span></div>
       </article>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section reveal">
       <h2 class="section-title"><span class="num">05</span>Skills</h2>
       <div class="skills-grid">
         <div>
-          <h4>Languages &amp; Frameworks</h4>
+          <h4>Languages</h4>
           <div class="chips">
-            <span>JavaScript</span><span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span><span>React</span>
+            <span>C++</span><span>JavaScript</span><span>Python</span><span>Java</span>
           </div>
         </div>
         <div>
-          <h4>Data &amp; Infrastructure</h4>
+          <h4>Technologies</h4>
           <div class="chips">
-            <span>MySQL</span><span>Sequelize</span><span>AWS EC2</span><span>AWS Lambda</span><span>AWS S3</span><span>GitHub Actions</span>
+            <span>ReactJS</span><span>Node.js</span><span>ExpressJS</span><span>MongoDB</span><span>Mongoose</span><span>GenAI</span><span>MySQL</span><span>Linux</span>
+          </div>
+        </div>
+        <div>
+          <h4>AI Tools</h4>
+          <div class="chips">
+            <span>Claude Code</span><span>Antigravity</span><span>OpenCode</span><span>Codex</span>
+          </div>
+        </div>
+        <div>
+          <h4>Core Fundamentals</h4>
+          <div class="chips">
+            <span>DSA</span><span>OOP</span><span>DBMS</span><span>OS</span>
           </div>
         </div>
         <div>
           <h4>Achievements</h4>
           <div class="chips">
-            <span>1705 LeetCode (Top 13%)</span><span>500+ problems solved</span>
+            <span>1713 LeetCode (Top 12%)</span><span>500+ problems solved</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section reveal">
       <h2 class="section-title"><span class="num">06</span>Contact</h2>
       <p class="contact-text">
         Open to backend and full-stack roles. If something here caught
         your eye, my inbox is faster than my API used to be.
       </p>
-      <a class="contact-cta" href="mailto:harsh.dev.mail@gmail.com">
-        harsh.dev.mail@gmail.com
+      <a class="contact-cta" href="mailto:harsh.devistrue@gmail.com">
+        harsh.devistrue@gmail.com
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </section>
 
     <footer class="footer">
-      <span>Designed &amp; built by Harsh Kumar</span>
+      <span>Designed &amp; built by Harsh Tripathi</span>
       <span>2026</span>
     </footer>
 
