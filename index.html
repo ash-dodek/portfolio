@@ -123,46 +123,64 @@
       <h2 class="section-title"><span class="num">04</span>Projects</h2>
 
       <article class="project reveal">
-        <span class="project-index">01</span>
-        <div class="project-head">
-          <h3>ResumeAI</h3>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Live
-            </a>
-            <a href="#" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>Source
-            </a>
+        <div class="project-shot">
+          <div class="shot-chrome">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot-chrome-label">resumeandai.vercel.app</span>
           </div>
+          <a class="shot-link" href="https://resumeandai.vercel.app/" target="_blank" rel="noopener" aria-label="Open ResumeAI live site">
+            <img src="img/resumeai.jpg" alt="ResumeAI landing page" loading="lazy">
+          </a>
+          <span class="shot-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            View Live
+          </span>
         </div>
-        <p class="project-desc">AI-powered resume analyzer that scores a resume against a job description and returns structured, actionable feedback.</p>
-        <ul>
-          <li>Built with React, Python, and FastAPI end to end.</li>
-          <li>Designed a 3-stage LLM pipeline via DeepSeek / OpenRouter that extracts structured JSON from JDs, parses resumes, and computes weighted match scores with improvement suggestions.</li>
-          <li>Engineered stage-specific prompts with strict JSON schema enforcement, eliminating unstructured LLM output.</li>
-          <li>Shipped a production-ready FastAPI backend with rate limiting, CORS middleware, and regex-based JSON sanitization.</li>
-        </ul>
-        <div class="tags"><span>React</span><span>Python</span><span>FastAPI</span><span>OpenRouter</span></div>
+        <div class="project-body">
+          <span class="project-index">01</span>
+          <div class="project-head">
+            <h3>ResumeAI</h3>
+            <div class="project-links">
+              <a href="https://resumeandai.vercel.app/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Live
+              </a>
+              <a href="https://github.com/ash-dodek/ResumeAI" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>Source
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">AI-powered resume analyzer, built end to end with React, Python, and FastAPI. Upload a resume and a job description and it runs a 3-stage LLM pipeline via DeepSeek/OpenRouter to score the match, flag missing requirements, and suggest fixes — with strict JSON schema enforcement so the output is always structured and reliable.</p>
+          <div class="tags"><span>React</span><span>Python</span><span>FastAPI</span><span>OpenRouter</span></div>
+        </div>
       </article>
 
       <article class="project reveal">
-        <span class="project-index">02</span>
-        <div class="project-head">
-          <h3>SpotiCLI</h3>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>Source
-            </a>
+        <div class="project-shot">
+          <div class="shot-chrome shot-chrome--term">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot-chrome-label">spoticli</span>
           </div>
+          <a class="shot-link" href="https://github.com/ash-dodek/SpotiCLI" target="_blank" rel="noopener" aria-label="Open SpotiCLI source on GitHub">
+            <img src="img/spoticli.jpg" alt="SpotiCLI terminal interface" loading="lazy">
+          </a>
+          <span class="shot-overlay">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>
+            View Source
+          </span>
         </div>
-        <p class="project-desc">Cross-platform CLI music player integrating Spotify and YouTube for low-latency playback, no browser tab required.</p>
-        <ul>
-          <li>Built with Node.js and mpv for real-time, low-latency audio streaming and reliable play-dl playback.</li>
-          <li>Implemented OAuth 2.0 with secure token handling for authenticated track and artist search.</li>
-          <li>Wired real-time playback controls through mpv's keyboard input handling.</li>
-          <li>Designed an interactive CLI with Inquirer and Chalk, featuring custom prompts and colorized output.</li>
-        </ul>
-        <div class="tags"><span>Node.js</span><span>mpv</span><span>Spotify API</span><span>OAuth 2.0</span></div>
+        <div class="project-body">
+          <span class="project-index">02</span>
+          <div class="project-head">
+            <h3>SpotiCLI</h3>
+            <div class="project-links">
+              <a href="https://github.com/ash-dodek/SpotiCLI" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>Source
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">Cross-platform CLI music player integrating Spotify and YouTube — search a song, pick the right result, and it streams instantly through mpv with real-time keyboard playback controls. Built with Node.js, OAuth 2.0 token handling, and an interactive Inquirer/Chalk interface, no browser tab required.</p>
+          <div class="tags"><span>Node.js</span><span>mpv</span><span>Spotify API</span><span>OAuth 2.0</span></div>
+        </div>
       </article>
     </section>
 
