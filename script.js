@@ -57,13 +57,15 @@
   let spyTicking = false;
   const updateActiveSection = () => {
     spyTicking = false;
-    const triggerLine = window.innerHeight * 0.4;
     let currentId = sections[0].id;
-    sections.forEach((section) => {
-      if (section.getBoundingClientRect().top - triggerLine <= 0) {
-        currentId = section.id;
-      }
-    });
+    if ((lenis ? lenis.scroll : window.scrollY) > 4) {
+      const triggerLine = Math.min(window.innerHeight * 0.4, 180);
+      sections.forEach((section) => {
+        if (section.getBoundingClientRect().top - triggerLine <= 0) {
+          currentId = section.id;
+        }
+      });
+    }
     navLinks.forEach((link) => {
       link.classList.toggle('active', link.dataset.section === currentId);
     });
