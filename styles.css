@@ -502,6 +502,11 @@ html { scrollbar-color: var(--bg-elev-2) var(--bg); scrollbar-width: thin; }
   color: var(--text-faint);
   margin-bottom: 0.9rem;
 }
+.tl-desc {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  margin-top: 0.6rem;
+}
 .tl-body ul li {
   position: relative;
   padding-left: 1.1rem;
