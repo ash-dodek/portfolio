@@ -6,11 +6,13 @@
 <title>Harsh Tripathi, Backend Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 </head>
 <body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <div class="controls">
   <div class="accent-picker" role="group" aria-label="Accent color">
@@ -35,11 +37,14 @@
         <div class="avatar"><img src="img/avatar.jpg" alt="Harsh"></div>
         <div>
           <h1>Harsh</h1>
-          <p class="uni-line">Engineering</p>
+          <p class="uni-line">Developer. Ships solo.</p>
         </div>
       </div>
 
+      <p class="tagline">I build backends, web and mobile apps, <em>end to end</em>, and care most about the part that has to work in production.</p>
+
       <div class="meta-row">
+        <span class="status-pill"><span class="pulse"></span>Open to roles</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-11.5a7 7 0 1 0-14 0C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>New Delhi, India</span>
       </div>
 
@@ -71,11 +76,11 @@
       <h2 class="section-title"><span class="num">01</span>About</h2>
       <div class="prose">
         <p>
-          I'm a full-stack developer who moves comfortably across
-          backend systems, web apps, and mobile, wherever a product
-          needs building. I like owning things end to end: architecture,
-          APIs, interfaces, deployment. If it needs to work in
-          production, that's the part I care about most.
+          I'm a developer who builds across <strong>backend, web, and mobile</strong>.
+          In both my internships I've been the only engineer, which means I own
+          everything: the architecture, the APIs, the UI, and whatever breaks
+          at 2am. The last legacy system I inherited answered in 3 seconds;
+          it now answers in under 200ms.
         </p>
       </div>
     </section>
@@ -85,7 +90,7 @@
 
       <div class="timeline">
         <div class="tl-item">
-          <span class="tl-date">Jul 2026 — Present</span>
+          <span class="tl-date">Jul 2026 — Present <span class="tl-now">Now</span></span>
           <div class="tl-body">
             <h3>SDE Intern <span class="tl-at">· SundayTech</span></h3>
             <p class="tl-loc">Remote</p>
@@ -107,6 +112,7 @@
       <h2 class="section-title"><span class="num">03</span>Projects</h2>
 
       <article class="project reveal">
+        <div class="project-core">
         <div class="project-shot project-shot--phone">
           <span class="platform-badge">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm-5 19a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM17 17H7V5h10Z"/></svg>
@@ -115,15 +121,15 @@
           <div class="phone-duo">
             <div class="phone phone--left">
               <div class="phone-notch"></div>
-              <a class="phone-screen" href="#" target="_blank" rel="noopener" aria-label="Astro OS landing screen">
+              <div class="phone-screen">
                 <img src="img/astroos-landing.jpg" alt="Astro OS landing screen" loading="lazy">
-              </a>
+              </div>
             </div>
             <div class="phone phone--right">
               <div class="phone-notch"></div>
-              <a class="phone-screen" href="#" target="_blank" rel="noopener" aria-label="Astro OS Oracle screen">
+              <div class="phone-screen">
                 <img src="img/astroos-oracle.jpg" alt="Astro OS Ask the Oracle screen" loading="lazy">
-              </a>
+              </div>
             </div>
           </div>
           <span class="shot-overlay">
@@ -136,17 +142,19 @@
           <div class="project-head">
             <h3>Astro OS</h3>
             <div class="project-links">
-              <a href="#">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Store
-              </a>
+              <span class="link-soon" aria-label="App Store listing coming soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.2 1.9"/></svg>Store · Soon
+              </span>
             </div>
           </div>
-          <p class="project-desc">Most astrology apps give you one interpretation. Astro OS runs your birth data through nine systems at once, from Vedic to BaZi to Numerology, and has an AI layer merge them into a single answer. Comes with a daily Clarity Score, an Oracle for plain-English questions, and a Pro tier for the full reading archive. Built solo, end to end, in React Native.</p>
+          <p class="project-desc">Most astrology apps give you one interpretation. Astro OS runs your birth data through eight systems at once, from Vedic to BaZi to Numerology, and has an AI layer merge them into a single answer. Comes with a daily Clarity Score, an Oracle for plain-English questions, and a Pro tier for the full reading archive. Built solo, end to end, in React Native.</p>
           <div class="tags"><span>React Native</span><span>Expo</span><span>JavaScript</span><span>RevenueCat</span></div>
+        </div>
         </div>
       </article>
 
       <article class="project reveal">
+        <div class="project-core">
         <div class="project-shot">
           <div class="shot-chrome">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -173,9 +181,11 @@
           <p class="project-desc">A shared daily space for two people. You each add what you're doing that day, check things off as you go, and watch the other person's progress fill in live. There's a combined completion ring, a running streak for days you both finish, and a week strip that marks which days had no plans, a miss, or both of you done. Made for couples and close friends who want to stay in sync without a group-chat's worth of noise.</p>
           <div class="tags"><span>Next.js</span><span>React</span><span>Supabase</span><span>Realtime</span></div>
         </div>
+        </div>
       </article>
 
       <article class="project reveal">
+        <div class="project-core">
         <div class="project-shot">
           <div class="shot-chrome">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -205,9 +215,11 @@
           <p class="project-desc">Upload a resume and the job description you're chasing, and ResumeAI shows you exactly where they don't line up. It runs both through a three-stage DeepSeek pipeline: one pass scores the match, one flags what's missing, one rewrites the weak spots. Every response is forced through a strict JSON schema, so it never comes back malformed. Built solo: React up front, FastAPI behind it.</p>
           <div class="tags"><span>React</span><span>Python</span><span>FastAPI</span><span>OpenRouter</span></div>
         </div>
+        </div>
       </article>
 
       <article class="project reveal">
+        <div class="project-core">
         <div class="project-shot">
           <div class="shot-chrome shot-chrome--term">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -234,43 +246,44 @@
           <p class="project-desc">A terminal music player for people who don't want a browser tab open just to hit play. Search a track, pick the right result off Spotify or YouTube, and it streams through mpv with keyboard controls for play, pause, skip, and volume. Handles the Spotify OAuth handshake itself, so you log in once and it stays out of your way.</p>
           <div class="tags"><span>Node.js</span><span>mpv</span><span>Spotify API</span><span>OAuth 2.0</span></div>
         </div>
+        </div>
       </article>
     </section>
 
     <section id="skills" class="section reveal">
       <h2 class="section-title"><span class="num">04</span>Skills</h2>
-      <div class="skills-grid">
-        <div>
+      <div class="skills-shell"><div class="skills-grid">
+        <div class="skill-row">
           <h4>Languages</h4>
           <div class="chips">
             <span>C++</span><span>JavaScript</span><span>Python</span><span>Java</span>
           </div>
         </div>
-        <div>
+        <div class="skill-row">
           <h4>Technologies</h4>
           <div class="chips">
-            <span>ReactJS</span><span>Node.js</span><span>ExpressJS</span><span>MongoDB</span><span>Mongoose</span><span>GenAI</span><span>MySQL</span><span>Linux</span>
+            <span>ReactJS</span><span>React Native</span><span>Next.js</span><span>Expo</span><span>Node.js</span><span>ExpressJS</span><span>FastAPI</span><span>MongoDB</span><span>Mongoose</span><span>MySQL</span><span>Supabase</span><span>GenAI</span><span>Linux</span>
           </div>
         </div>
-        <div>
+        <div class="skill-row">
           <h4>AI Tools</h4>
           <div class="chips">
             <span>Claude Code</span><span>Antigravity</span><span>OpenCode</span><span>Codex</span>
           </div>
         </div>
-        <div>
+        <div class="skill-row">
           <h4>Core Fundamentals</h4>
           <div class="chips">
             <span>DSA</span><span>OOP</span><span>DBMS</span><span>OS</span>
           </div>
         </div>
-        <div>
+        <div class="skill-row">
           <h4>Achievements</h4>
           <div class="chips">
             <span>1713 LeetCode (Top 12%)</span><span>500+ problems solved</span>
           </div>
         </div>
-      </div>
+      </div></div>
     </section>
 
     <section id="contact" class="section contact-section reveal">
@@ -279,10 +292,16 @@
         Open to backend and full-stack roles. If something here caught
         your eye, my inbox is faster than my API used to be.
       </p>
-      <a class="contact-cta" href="mailto:harsh.devistrue@gmail.com">
-        harsh.devistrue@gmail.com
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
+      <div class="contact-actions">
+        <a class="contact-cta" href="mailto:harsh.devistrue@gmail.com">
+          <span>harsh.devistrue@gmail.com</span>
+          <span class="cta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </a>
+        <a class="contact-ghost" href="https://github.com/ash-dodek" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <span class="cta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </a>
+      </div>
     </section>
 
     <footer class="footer">
